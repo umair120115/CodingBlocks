@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for the movie details */
+  .movie-details {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Header Section */
+  .movie-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .movie-header h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .movie-location {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  /* Body Section */
+  .movie-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Movie Poster */
+  .movie-poster {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Movie Info Section */
+  .movie-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .movie-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .movie-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .movie-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button Styling */
+  .book-ticket-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-ticket-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .movie-body {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .movie-poster {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  

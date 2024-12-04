@@ -1,0 +1,20 @@
+/* Floating container style */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping of cards */
+    gap: 1.5rem; /* Spacing between cards */
+    justify-content: center; /* Centers the cards */
+    margin: 20px; /* Adds some space around the container */
+  }
+  
+  /* Additional card styling (optional for hover effects or shadow) */
+  .movie-container .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+  }
+  
+  .movie-container .card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  }
