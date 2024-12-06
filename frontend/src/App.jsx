@@ -3,6 +3,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import LoginForm from './components/LoginPage';
 import RegisterForm from './components/Register';
 import Home from './pages/Home';
+import SearchPage from './pages/SearchPage';
 
 function App() {
   function Logout(){
@@ -22,6 +23,7 @@ function App() {
            <Route path='/register' element={<RegisterAndLogout/>}/>
            <Route path='/' element={<ProtectedRoute><Home/></ProtectedRoute>}/>
            <Route path='/logout' element={<Logout/>}/>
+           <Route path='/search' element={<ProtectedRoute><SearchPage/></ProtectedRoute>}/>
 
 
        </Routes>
